@@ -13,3 +13,8 @@ kubectl apply -f argocd-app.yaml -n argocd
 ```shell
 kubectl rollout restart -n argocd deployment argocd-repo-server
 ```
+
+## Creating the backup
+```shell
+argocd admin export -n argocd > backup-$(date +"%Y-%m-%d_%H:%M").yml
+```
