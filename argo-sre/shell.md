@@ -27,3 +27,9 @@ argocd admin export -n argocd > backup-$(date +"%Y-%m-%d_%H:%M").yml
 
 ```shell
 argocd admin import - < backup-2024-10-11_10:18.yml
+```
+
+## Apply argocd-notifications
+```shell
+kubectl apply -n argocd -f argocd-notifications-app.yaml
+```
