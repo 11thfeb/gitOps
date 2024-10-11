@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - name: argocd-application-controller
-        env:
-        - name: ARGOCD_CONTROLLER_REPLICAS
-          value: "3"
+        - name: argocd-application-controller
+          env:
+            - name: ARGOCD_CONTROLLER_REPLICAS
+              value: "3"
